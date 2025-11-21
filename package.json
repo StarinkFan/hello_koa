@@ -6,7 +6,7 @@
     "start": "node bin/www",
     "dev": "./node_modules/.bin/nodemon bin/www",
     "prd": "pm2 start bin/www",
-    "test": "mocha"
+    "test": "mocha --reporter mochawesome --reporter-options output=mochawesome-report/mochawesome.json"
   },
   "dependencies": {
     "co": "^4.6.0",
